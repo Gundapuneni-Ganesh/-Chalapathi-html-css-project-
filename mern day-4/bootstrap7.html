@@ -1,0 +1,148 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>title</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+</head>
+<body>
+<div class="container  p-5 my-5 bg-primary text-white">
+	<div class="row">
+		<div class="col"><canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+<script>
+var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+var yValues = [55, 49, 44, 24, 15];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
+
+new Chart("myChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "World Wide Wine Production 2018"
+    }
+  }
+});
+</script></div>
+
+<div class="col">
+	<pre>
+		How to Create a Graph in Excel
+Enter your data into Excel.
+Choose one of the graph and chart options to make.
+Highlight your data and click 'Insert' your desired graph.
+Switch the data on each axis, if necessary.
+Adjust your data's layout and colors.
+Change the size of your chart's legend and axis labels.
+	</pre>
+</div>
+
+</div> <!--  first row end-->
+</div>
+
+<div class="container  p-5 my-5 bg-secondary text-white">
+	<div class="row">
+		<div class="col"><p><strong>Google Charts provides a perfect way to visualize data on your website. From simple line charts to complex hierarchical tree maps, the chart gallery provides a large number of ready-to-use chart types. The most common way to use Google Charts is with simple JavaScript that you embed in your web page. </strong></p></div>
+	<div class="col"><canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
+
+<script>
+var xValues1 = [];
+var yValues1 = [];
+generateData("Math.sin(x)", 0, 10, 0.5);
+
+new Chart("myChart1", {
+  type: "line",
+  data: {
+    labels: xValues1,
+    datasets: [{
+      fill: false,
+      pointRadius: 2,
+      borderColor: "rgba(0,0,255,0.5)",
+      data: yValues1
+    }]
+  },    
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "y = sin(x)",
+      fontSize: 16
+    }
+  }
+});
+function generateData(value, i1, i2, step = 1) {
+  for (let x = i1; x <= i2; x += step) {
+    yValues1.push(eval(value));
+    xValues1.push(x);
+  }
+}
+</script>
+</div>
+
+	</div><!-- row2 end-->
+	
+</div><!-- container2 end-->
+
+<div class="container  p-5 my-5 bg-secondary text-white">
+	<div class="row">
+		<div class="col"><canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+
+<script>
+var xValues2 = [];
+var yValues2 = [];
+generateData("Math.sin(x)", 0, 10, 0.5);
+
+new Chart("myChart2", {
+  type: "line",
+  data: {
+    labels: xValues2,
+    datasets: [{
+      fill: false,
+      pointRadius: 2,
+      borderColor: "rgba(0,0,255,0.5)",
+      data: yValues2
+    }]
+  },    
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "y = sin(x)",
+      fontSize: 16
+    }
+  }
+});
+function generateData(value, i1, i2, step = 1) {
+  for (let x = i1; x <= i2; x += step) {
+    yValues2.push(eval(value));
+    xValues2.push(x);
+  }
+}
+</script></div>
+<div class="col"><h5>Google Charts provides a perfect way to visualize data on your website. From simple line charts to complex hierarchical tree maps, the chart gallery provides a large number of ready-to-use chart types. The most common way to use Google Charts is with simple JavaScript that you embed in your web page.</h5></div>
+	</div>
+
+
+
+
+</body>
+</html>
