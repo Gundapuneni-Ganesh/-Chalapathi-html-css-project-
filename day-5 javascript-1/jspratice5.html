@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		#main{
+			display:flex;
+			justify-content: center;
+			align-item:center;
+			gap:10px;
+			margin:20px;
+
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		 N1<input type="number" id="n1" value="num1">
+		 N2<input type="number" id="n2" value="num2">
+		 
+
+		<button onclick="res()">result</button>
+		result<input type="number" id="n3" value="num3">
+	</div>
+	
+
+</body>
+<script>
+	function res(){
+		var num1=document.getElementById("n1");
+		var num2=document.getElementById("n2");
+		var res=num1*num2;
+		confirm(` value is $[res]`);
+
+	}
+	
+	
+</script>
+</html>
