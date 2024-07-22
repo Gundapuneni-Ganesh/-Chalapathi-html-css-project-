@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> </title>
+</head>
+<body>
+
+	<h2>Checking lemeons</h2>
+    <input type="number" id="inputnumber" placeholder="Enter a value">
+    <button onclick="lemenos()">Check</button>
+    <br><br>
+    
+    <p id="demo"></p>
+
+</body>
+
+
+<script>
+	function lemenos(){
+            var input=document.getElementById('inputnumber').value;
+            
+            var rem=0;
+            if(input<0){
+            	document.getElementById('demo').innerText= "enter valid data";
+            }
+            else{
+            	if(input<21){
+	            	rem=21-input;
+	            	document.getElementById('demo').innerText= rem+"remaning should need";
+                }
+	            else if(input>21){
+	            	rem=input-21;
+	            	document.getElementById('demo').innerText= rem+" are extra lemenos ";
+                }
+                else if(input=21){
+                    
+                    document.getElementById('demo').innerText= "no need  lemenos ";
+                }
+            }         
+            
+    }
+
+	  
+</script>
+</html>
