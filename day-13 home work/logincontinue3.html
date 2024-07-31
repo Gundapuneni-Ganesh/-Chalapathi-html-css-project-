@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> website Demo of countdown </title>
+	<style>
+	.container{
+		display:flex;
+		justify-content:center;
+	    align-items: center;
+	}
+	h1 ,h3{
+		text-align: center;
+		color:lightgoldenrodblue;
+	}
+	body{
+		background-image:url("https://png.pngtree.com/thumb_back/fw800/background/20201024/pngtree-minimal-cylinder-podium-scene-with-geometrical-forms-image_435987.jpg");
+		background-size:cover;
+		background-repeat: no-repeat;
+			
+	}
+	</style>
+
+</head>
+<body>
+	<h1><strong> Hi, Welcome to our website</strong></h1>
+	<div class="container">
+
+		
+	    <form id="selectionForm">
+	    	<h2>Select Your Information</h2>
+	        <p>Gender:</p>
+	        <input type="radio" id="male" name="gender" value="male">
+	        <label for="male">Male</label><br>
+	        <input type="radio" id="female" name="gender" value="female">
+	        <label for="female">Female</label><br><br>
+
+	        <p>Occupation:</p>
+	        <input type="radio" id="student" name="occupation" value="student">
+	        <label for="student">Student</label><br>
+	        <input type="radio" id="employee" name="occupation" value="employee">
+	        <label for="employee">Employee</label><br><br>
+
+	        <button type="button" onclick="submitForm()">Submit</button>
+	    </form>
+    </div>
+
+    <script>
+        let timer;
+
+        function startTimer() {
+            timer = setTimeout(() => {
+                alert("Time is up!");
+                window.location.href = "login1.html"; // Redirect to login page
+            }, 60000); // 1 minute
+        }
+
+        function submitForm() {
+            clearTimeout(timer); // Stop the timer
+            alert("Form submitted!");
+            window.location.href = "login1.html"; // Redirect to login page or another page
+        }
+
+        window.onload = startTimer;
+    </script>
+</body>
+</html>
+
+
+
+
+
+</body>
+</html>

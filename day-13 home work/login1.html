@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Login Page Form</title>
+	<style>
+		.container ,.col{
+			display:flex;
+			justify-content:center;
+			align-items: center;
+		}
+		#loginbutton{
+			width:120px;
+		}
+		a{
+			display:flex;
+			justify-content:space-evenly;
+			align-items: center;
+		}
+		h1{
+			text-align: center ;
+			color:darkgreen;
+
+		}
+		body{
+		background-image:url("https://img.freepik.com/premium-photo/abstract-concept-data-center-threat-looming-ransomware-cloud_946657-14402.jpg");
+		background-size:cover;
+		background-repeat: no-repeat;
+			
+	}
+	
+
+	</style>
+</head>
+<body>
+	<h1 >login form </h1>
+	<div class="container">
+		   
+			<div class="col">
+				<form>
+					<label style="color:yellow">Emailid:</label>
+					<br>
+					<input type="email" placeholder="Enter the valid emailid" id="mailid" required>
+					<br>
+					<br>
+					<label style="color:yellow">Password</label>
+					<br>
+					<input type="password" placeholder="Enter the password" id="password" required>
+					<br>
+					<br>
+					<input type="button" value="Login" id="loginbutton" onclick= "submitform()">
+					<br>
+
+
+				</form>
+				
+			</div>
+		     
+	</div>
+	<p><a href="file:///C:/Users/srisr/Downloads/coding%20pratice/login%20pages/logincontinue2.html" target="_blank" onclick="forgotpassword()"> forgot password</a></p>
+	
+
+
+</body>
+<script>
+	function submitform(){
+		 window.location.href = "logincontinue3.html";
+
+	}
+	
+	
+
+
+</script>
+</html>
+
+
+
