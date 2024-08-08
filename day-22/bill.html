@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div style="display:grid;justify-content: center; padding:50px 150px 50px">
+		<form>
+			<label for="day"> Enter the day </label>
+			<input type="number" id="days" name="day">
+			<br>
+			<label for="message"> Enter the message </label>
+			<input type="number" id="message" name="message">
+			<br>
+			<label for="data"> Enter the data </label>
+			<input type="number" id="data" name="data">
+			<br>
+			<label for="call"> Enter the calls </label>
+			<input type="number" id="call" name="day">
+			<br>
+			<button onclick="formsubmit()"> Submit</button>
+
+		</form>
+		<div id="block"></div>
+	</div>
+
+</body>
+
+<script>
+	function formsubmit(){
+		const day=document.getElementById("days").value;
+		const message=document.getElementById("message").value;
+		const data=document.getElementById("data").value;
+		const call=document.getElementById("call").value;
+		let correct=true;
+		if(day>84){
+			alert("your plan is exparied, kindly recharge");
+
+		}
+		else{
+			let daysleft=84-days;
+			if(daysleft>0 && daysleft<=84){
+				document.getElementById("block").innerText= daysleft;
+				let messageleft=100-message;
+				if(messageleft>0 && messageleft<100){
+					document.getElementById("block").innerText= messageleft;
+					let dataleft=2.0-data;
+					if(dataleft>0 && dataleft<2.0){
+						document.getElementById("block").innerText= dataleft;
+						
+
+					}else{
+						alert("please enter the valid  data details");
+					}
+
+				}else{
+					alert("please enter the valid  message details");
+				}
+
+			}else{
+				alert("please enter the valid details");
+			}
+
+
+
+			
+		}
+
+	}
+	
+</script>
+</html>
